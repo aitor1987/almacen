@@ -31,11 +31,11 @@ public class Main {
 
 
 				distribuidor.setNombre(cs[0]);
-				distribuidor.setCif(cscs[1]);
+				distribuidor.setCif(cs[1]);
 
 
 				direccion.setPoblacion(cs[2]);
-				direccion.setCalle(cscs[3]);
+				direccion.setCalle(cs[3]);
 				direccion.setNumero(Integer.parseInt(cs[4]));
 
 
@@ -46,7 +46,7 @@ public class Main {
 
 
 				distribuidor.setDireccion(direccion);
-				distribuidor.setPersonaContacto(contacto);
+				distribuidor.setContacto(contacto);
 
 
 				arrayDistribuidor.add(distribuidor);
@@ -64,15 +64,15 @@ public class Main {
 
 				System.out.println("Dirección: ");
 
-				System.out.println("   Poblacion: " + arrayDistribuidor.get(i).getDireccion().getCiudad());
+				System.out.println("   Poblacion: " + arrayDistribuidor.get(i).getDireccion().getPoblacion());
 				System.out.println("   Calle: " + arrayDistribuidor.get(i).getDireccion().getCalle());
-				System.out.println("   Numero: " + arrayDistribuidor.get(i).getDireccion().getPiso());
+				System.out.println("   Numero: " + arrayDistribuidor.get(i).getDireccion().getNumero());
 
 
 				System.out.println("Contacto de Persona: ");
-				System.out.println("   DNI: " + arrayDistribuidor.get(i).getPersonaContacto().getDni());
-				System.out.println("   Nombre: " + arrayDistribuidor.get(i).getPersonaContacto().getNombre());
-				System.out.println("   Apellido: " + arrayDistribuidor.get(i).getPersonaContacto().getApellido());
+				System.out.println("   DNI: " + arrayDistribuidor.get(i).getContacto().getDni());
+				System.out.println("   Nombre: " + arrayDistribuidor.get(i).getContacto().getNombre());
+				System.out.println("   Apellido: " + arrayDistribuidor.get(i).getContacto().getApellido());
 
 				System.out.println("--------------------------------");
 				System.out.print("");

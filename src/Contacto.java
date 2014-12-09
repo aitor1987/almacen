@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Contacto {
 
 
-	private int dni;
+	private String dni;
 
 	private String nombre, apellido;
 
@@ -34,12 +34,12 @@ public class Contacto {
 
 
 
-	public  void setDni (int dni){
+	public  void setDni (String dni){
 
 	this.dni = dni;
 	}
 
-	public  int getDni()
+	public  String getDni()
 	{
 	return dni;
 	}

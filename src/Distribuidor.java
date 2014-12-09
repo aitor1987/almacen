@@ -8,9 +8,9 @@ public class Distribuidor {
 
 	private String nombre, cif;
 
-	private ArrayList<Direccion> direccion;
+	private Direccion direccion;
 
-	private ArrayList<Contacto> contacto;
+	private Contacto contacto;
 
 
 
@@ -25,7 +25,7 @@ public class Distribuidor {
 	}
 
 
-	public  void setPCif(String cif){
+	public  void setCif(String cif){
 
 	this.cif = cif;
 	}
@@ -37,23 +37,23 @@ public class Distribuidor {
 
 
 
-	public  void setDireccion (ArrayList<Direccion>  direccion){
+	public  void setDireccion (Direccion  direccion){
 
 	this.direccion = direccion;
 	}
 
-	public  ArrayList<Direccion> getDireccion()
+	public  Direccion getDireccion()
 	{
 	return direccion;
 	}
 
 
-	public  void setContacto (ArrayList<Contacto>  Contacto){
+	public  void setContacto (Contacto  Contacto){
 
 	this.contacto = contacto;
 	}
 
-	public  ArrayList<Contacto> getContacto()
+	public  Contacto getContacto()
 	{
 	return contacto;
 	}
