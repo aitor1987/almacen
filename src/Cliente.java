@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Cliente {
 
 
-	private double num_socio, dto;
+	private int num_socio, dto;
 
 	private String nombre, apellidos, dni;
 
@@ -45,23 +45,23 @@ public class Cliente {
 	}
 
 
-	public  void setNum_socio (double num_socio){
+	public  void setNum_socio (int num_socio){
 
 	this.num_socio = num_socio;
 	}
 
-	public  double getNum_socio()
+	public  int getNum_socio()
 	{
 	return num_socio;
 	}
 
 
-	public  void setDto (double dto){
+	public  void setDto (int dto){
 
 	this.dto = dto;
 	}
 
-	public  double getDto()
+	public  int getDto()
 	{
 	return dto;
 	}
